@@ -25,11 +25,11 @@ if __name__ == "__main__":
     crew = Crew(
         agents=[
             realestate_agent,
-            # lawyer_agent,
+            lawyer_agent,
         ],
         tasks=[
             realtor_task,
-            # lawyer_task,
+            lawyer_task,
         ],
     )
 
