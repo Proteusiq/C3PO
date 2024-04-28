@@ -19,7 +19,7 @@ DAY_LOOKUP = {
 }
 
 
-TODAY = (f"{date.today(): %B %d{DAY_LOOKUP.get('%B', 'th')} %Y}")
+today = (f"{date.today(): %B %d{DAY_LOOKUP.get('%B', 'th')} %Y}")
 
 
 @tool('DuckDuckGoSearch')
@@ -30,9 +30,9 @@ def search(query:str):
 # Define the researcher agent
 researcher = Agent(
   role='Senior Research Analyst',
-  goal=f'Discover and analyze novel {technology}',
+  goal='Discover and analyze novel technology',
   backstory=f"""A curious explorer at a {technology} tech think tank, skilled in identifying and evaluating new trends in technology.
-  You thrive on uncovering innovative ideas and translating them into digestible insights. Today is {TODAY}""",
+  You thrive on uncovering innovative ideas and translating them into digestible insights. Today is {today}""",
   verbose=True,
   max_inter=3,
   allow_delegation=False,
@@ -42,9 +42,9 @@ researcher = Agent(
 # Define the writer agent
 writer = Agent(
   role='Storytelling Content Creator',
-  goal=f'Write engaging and narrative-driven blog posts about {technology} topics',
+  goal='Write engaging and narrative-driven blog posts about tech topic',
   backstory=f"""A talented storyteller known for captivating articles that combine technical accuracy with narrative flair.
-  You excel at transforming intricate tech concepts into relatable stories, appealing to both experts and enthusiasts. Today is {TODAY}""",
+  You excel at transforming intricate tech concepts into relatable stories, appealing to both experts and enthusiasts. Today is {today}""",
   verbose=True,
   allow_delegation=True,
   max_inter=5,
@@ -75,7 +75,7 @@ crew = Crew(
 )
 
 # Execute the tasks
-result = crew.kickoff()
+results = crew.kickoff()
 
 print("######################")
-print(result)
+print(results)

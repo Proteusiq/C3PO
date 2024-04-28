@@ -1,0 +1,13 @@
+research_blog_task:
+  description: >
+    Research the most exciting {technology} advancements of the current year.
+    Focus on identifying innovative technologies and their implications for various industries.
+  expected_output: >
+    A detailed research report in an easy-to-understand format
+
+write_blog_task:
+  description: >
+    Craft a blog post based on the research findings.
+    The post should weave the technical details into a compelling narrative that captivates a tech-savvy audience. Use vivid language to create an engaging and memorable reader experience.
+  expected_output: >
+    A creatively written blog post of at minimum 8 paragraphs in a story-like way in a markdown
