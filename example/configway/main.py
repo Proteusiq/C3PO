@@ -1,5 +1,5 @@
 from blogger import BloggerCrew
-from utils.events import today
+from events import today
 
 
 if __name__ == "__main__":

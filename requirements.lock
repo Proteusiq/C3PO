@@ -48,6 +48,7 @@ cachetools==5.3.3
     # via gptcache
     # via lancedb
 certifi==2024.2.2
+    # via curl-cffi
     # via httpcore
     # via httpx
     # via kubernetes
@@ -57,6 +58,7 @@ certifi==2024.2.2
     # via yt-dlp
 cffi==1.16.0
     # via cryptography
+    # via curl-cffi
     # via pynacl
 charset-normalizer==3.3.2
     # via requests
@@ -67,6 +69,7 @@ chromadb==0.4.24
     # via embedchain
 click==8.1.7
     # via crewai
+    # via duckduckgo-search
     # via lancedb
     # via typer
     # via uvicorn
@@ -78,8 +81,11 @@ crewai==0.28.8
     # via crew
 crewai-tools==0.1.7
     # via crew
+    # via tools
 cryptography==42.0.5
     # via pyjwt
+curl-cffi==0.6.4
+    # via duckduckgo-search
 dataclasses-json==0.6.4
     # via langchain
     # via langchain-community
@@ -97,6 +103,8 @@ distro==1.9.0
 docstring-parser==0.15
     # via google-cloud-aiplatform
     # via instructor
+duckduckgo-search==5.3.0
+    # via tools
 embedchain==0.1.100
     # via crewai
     # via crewai-tools
@@ -309,6 +317,7 @@ opentelemetry-util-http==0.45b0
     # via opentelemetry-instrumentation-fastapi
 orjson==3.10.0
     # via chromadb
+    # via duckduckgo-search
     # via langsmith
 outcome==1.3.0.post0
     # via trio
@@ -496,6 +505,8 @@ tiktoken==0.5.2
     # via langchain-openai
 tokenizers==0.15.2
     # via chromadb
+tools @ file:///Users/pwd/Codes/agents/crew/example/tools
+    # via crew
 tqdm==4.66.2
     # via chromadb
     # via huggingface-hub
@@ -529,6 +540,8 @@ urllib3==2.2.1
     # via requests
     # via selenium
     # via yt-dlp
+utils @ file:///Users/pwd/Codes/agents/crew/example/utils
+    # via crew
 uvicorn==0.29.0
     # via chromadb
 uvloop==0.19.0

@@ -1,7 +1,7 @@
 from datetime import date
 from crewai import Agent, Task, Crew, Process
-from tools.browser import search
-from utils.events import today
+from browser import search
+from events import today
 
 
 # Define the researcher agent

@@ -8,6 +8,8 @@ authors = [
 dependencies = [
     "crewai[tool]>=0.28.8",
     "crewai-tools>=0.1.7",
+    "tools @ file:///Users/pwd/Codes/agents/crew/example/tools",
+    "utils @ file:///Users/pwd/Codes/agents/crew/example/utils",
 ]
 readme = "README.md"
 requires-python = ">= 3.11"

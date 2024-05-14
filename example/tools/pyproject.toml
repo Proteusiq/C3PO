@@ -1,0 +1,16 @@
+[project]
+name = "tools"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "proteusiq", email = "praysonpi@gmail.com" }
+]
+dependencies = [
+    "crewai-tools>=0.1.7",
+    "duckduckgo-search>=5.3.0",
+]
+
+requires-python = ">= 3.11"
+
+
+
